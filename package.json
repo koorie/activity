@@ -1,0 +1,68 @@
+{
+  "name": "@koorie/activity",
+  "version": "1.0.0-rc.0",
+  "license": "Apache-2.0",
+  "description": "Wraps extends [stdout,stderr].write, node:util/inspect and, process.exit. ESModule.",
+  "type": "module",
+  "main": "index.js",
+  "types": "./types/index.d.ts",
+  "engines": {
+    "node": "^20"
+  },
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "files": [
+    "lib",
+    "index.js",
+    "types"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "shell_script/build.sh",
+    "build:clean": "shell_script/clean_build.sh",
+    "lint": "npx eslint . --ext .ts",
+    "lint-fix": "npx eslint . --fix --ext .ts",
+    "tsc-watch": "npx tsc --watch"
+  },
+  "dependencies": {
+    "oftypes": "5.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.46.0",
+    "typescript": "^5.1.6"
+  },
+  "keywords": [
+    "koorie",
+    "activity",
+    "stdout",
+    "stderr",
+    "exit",
+    "inspect",
+    "trace"
+  ],
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/simonedelpopolo/projects/koorie#category-CONTRIBUTE"
+  },
+  "author": {
+    "name": "Simone Del Popolo",
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/simonedelpopolo"
+  },
+  "homepage": "https://github.com/koorie/activity#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koorie/activity.git"
+  },
+  "bugs": {
+    "email": "simonedelpopolo@outlook.com",
+    "url": "https://github.com/koorie/activity/issues"
+  }
+}
